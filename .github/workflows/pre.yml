@@ -42,7 +42,7 @@ jobs:
             python -m pip install --upgrade pip
             python -m pip install tox tox-gh-actions
       - name: Test with tox
-        run: tox -e --conf tox.ini --pre
+        run: tox --conf tox.ini PIP_PRE=True
 
       # - name: Install & test
       #   run: |
